@@ -9,11 +9,10 @@ start = min(num_list)
 for count in range(start, max(num_list)):
     if count not in num_list:
         print(f"{count} is missing")
-# ===============================================
-# number: 0
-# f_obj = open("three_digit_numbers.txt", "r")
-# for line in f_obj:
-#     print(line)
-# f_obj.close
-# ================================================
-# What I started with to develop a foundation and idea
+# Takes number in "three_digit_numbers.txt"
+# Shows which numbers are missing as well as in order
+f_samples = open("sorted_numbers.txt", "w")
+f_samples.write(f"Numbers sorted numerically. \n  ")
+        
+
+        
