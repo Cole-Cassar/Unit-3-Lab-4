@@ -8,11 +8,11 @@ for col in cols:
 start = min(num_list)
 for count in range(start, max(num_list)):
     if count not in num_list:
-        print(f"{count} is missing")
+        print(f"{count} is missing")      
 # Takes number in "three_digit_numbers.txt"
-# Shows which numbers are missing as well as in order
-f_samples = open("sorted_numbers.txt", "w")
-f_samples.write(f"Numbers sorted numerically. \n  ")
-        
-
-        
+# Shows which numbers are missing as well as in order\
+sorted_nums = str(sorted(cols))
+sorted_numbers = open("sorted_numbers.txt", "w")
+sorted_numbers.write(sorted_nums)
+f.close()
+sorted_numbers.close()
